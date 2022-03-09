@@ -1,0 +1,255 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body{
+   background: var(--preta);
+   font-family: 'Arial', Times, serif;
+   color:white;
+}
+
+.fixo-topo{
+  background: var(--preta);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;  
+  
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Staatliches', Lucida Sans Unicode, Lucida Grande, Lucida Sans, Arial, sans-serif;
+    font-size:40px;
+    padding-right: 20px;
+}
+
+header nav a{
+    text-decoration:none;
+    color:#AAA;
+    margin-right: 10px;
+}
+
+
+header nav a:hover{
+    color:#fff;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('../img/capa-lacasadepapel3.jpg');
+
+    height:400px;
+    background-size:cover;
+ 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    text-align: justify;
+    font-family: 'Microsoft Sans Serif', Segoe UI, Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 50px;
+    font-family: 'Bahnschrift Condensed', Trebuchet MS, Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+
+    padding:15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color:white;
+    color:black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carrosel-filmes{
+    margin-left: 15px;
+    margin-top:5px;
+}
+
+.carrosel-filmes .alta{
+    font-size: 16px;
+    font-family: Arial, 'Helvetica', sans-serif;
+    padding: 5px 1px 10px;
+}
+
+.carrosel-filmes .series{
+    font-size: 16px;
+    font-family: Arial, 'Helvetica', sans-serif;
+    padding: 0px 1px 10px;
+}
+
+.carrosel-filmes .cine{
+    font-size: 16px;
+    font-family: Arial, 'Helvetica', sans-serif;
+    padding: 0px 1px 10px;
+}
+
+.carrosel-filmes .crianca{
+    font-size: 16px;
+    font-family: Arial, 'Helvetica', sans-serif;
+    padding: 0px 1px 10px;
+}
+
+input {
+	outline: none;
+}
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; 
+}
+
+.pesquisar{
+    display: block;
+    float: right;
+    margin-top: -45px;
+    margin-right: 105px;
+}
+
+.notificacao{
+    background: url('../img/sino4.png') no-repeat;
+    float: right;
+    padding-top: 0px;
+    padding-bottom: 25px;
+    padding-right: 20px;
+    padding-left: 75px;
+    margin-top: -37px;
+    cursor: pointer;
+    transition: .3s ease all;
+    align-items: center;
+}
+
+.profile{
+    background: url('../img/profile.png') no-repeat;
+    float: right;
+    padding-top: 0px;
+    padding-bottom: 34px;
+    padding-right: 25px;
+    padding-left: 26px;
+    margin-top: -42px;
+    cursor: pointer;
+    transition: .3s ease all;
+    align-items: center;
+}
+
+input[type=search] {
+	background: url('../img/lupa7.png') 5px no-repeat;
+    background-color: #141414;
+	border: 1px #ccc;
+	padding: 10px 9px 11px;
+	width: 55px;
+	
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+input[type=search]:focus {
+	width: 200px;
+	background-color: #fff;
+	border-color: white;
+    border: white 1px solid;
+	
+}
+
+
+input:-moz-placeholder {
+	color: #999;
+}
+input::-webkit-input-placeholder {
+	color: #999;
+}
+
+#demo-2 input[type=search] {
+	width: 15px;
+	padding-left: 10px;
+	color: transparent;
+	cursor: pointer;
+    text-indent: 5px;
+}
+
+
+#demo-2 input[type=search]:focus {
+	width: 180px;
+    padding: auto;
+	padding-left: 32px;
+	color: #fff;
+	background-color: #000;
+	cursor: auto;
+    align-items: center;
+}
+
+#demo-2 input:-moz-placeholder {
+	color: transparent;
+}
+#demo-2 input::-webkit-input-placeholder {
+	color: transparent;
+}
